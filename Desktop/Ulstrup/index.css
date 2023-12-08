@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 3em;
+    font-family:'copperplate gothis light', fantasy;
+}
+h2{
+    font-size: 2em;
+    font-family: 'didot LTSTD','hoefler text', garamond,
+     'times new roman', serif;
+}
+h3{
+    font-size: 1.3em;
+    font-family:"Lucida Bright", Georgia, serif;
+}
+p{
+    font-size: 1em;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ul{list-style: none;}
+li{
+    font-size: 1.25;
+    font-family:"Bodoni MT", "Hoefler Text",
+    Garamond, "Times New Roman", serif ;
+}
+a{
+    font-family:"Franklin Gothic Medium", "Franklin Gothic", 
+    "ITC Franklin Gothic", Arial, sans-serif ;
+}
+
+body{
+    margin: 0;
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 6px 18px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(246, 231, 203);
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+}
+
+button:hover{
+    background-color: rgb(200, 131, 3);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .ulstrup1{
+    height: 100px;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(177, 29, 29);
+}
+
+header a:hover{
+    color: orange;
+}
+
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 94, 0);
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    )
+    ,url(img/fondoUlstrup.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#inicio h1{
+    color: white;
+}
+
+ section div ul{
+    font-size: 1.5em;
+    margin: 0px 5px;
+}
+
+section .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+#tienda .container{
+    display: block;
+    text-align: center;
+}
+
+#tienda h2{
+    font-size: 2.5em;
+}
+
+#tienda a{
+    
+    padding: 5px 12px;
+    text-decoration: none;
+    color: rgb(177, 29, 29);
+}
+
+
+#tienda a:hover{
+    color: orange;
+}
+
+#estufas{
+    background-color: rgb(214, 141, 5);
+
+}
+
+#estufas img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+#estufasC{
+    background-color: rgb(194, 5, 5);
+    margin: 5px 0px;
+}
+
+#estufasC img{
+width: 300px;
+border-radius: 15px;
+}
+
+#estufasR{
+    background-color: rgb(138, 1, 1);
+    margin: 5px 0px;
+}
+
+#estufasR img{
+    
+    width: 300px;
+    border-radius: 15px;
+    
+}
+
+
+
+#otros{
+    background-color: rgb(90, 90, 90);
+    margin: 5px 0px;
+    
+}
+
+#otros h3{
+    text-align: center;
+}
+
+#otros img{
+    width: 300px;
+    border-radius: 15px;
+}
+
+#otros .imgFogonero{
+    width: 230px;
+}
+
+.nosotros{
+    text-align: center;
+}
+
+#acerca-de-nosotros{
+background-color: orange;
+}
+
+.fuegoLogo{
+    width: 90px;
+    float: right;
+    opacity: 0.3;
+}
+
+.container .ulstrup2{
+    height: 100px;
+}
+
+#acerca-de-nosotros p{
+    margin: 0px 80px;
+
+}
+
+#contacto{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    )
+    ,url(img/Ulstrupfinal.jpeg);
+    margin: 5px 0px;
+}
+
+#contacto ul{
+    font-size: 2em;
+    margin:0%;
+    font-weight: bold;
+    display: flex;
+    
+}
+#contacto .whatsapp{
+    padding:0 15px;
+    text-decoration: none;
+    color: black;
+}
+.whatsapp :hover{
+    color: white;
+}
+
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: white;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #tienda .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    #tienda nav{
+        flex-direction: row;
+        padding-right: 20px;
+    }
+    
+    #estufas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estufas img{
+        min-height:0%;
+        max-width: max-content;
+        margin: 10px;
+        
+    }
+
+    #estufas .programas1{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estufas .programas2{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estufasC .grandes{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estufasC img{
+        min-width: 0%;
+        max-width: max-content;
+        margin: 10px;
+    }
+
+    #estufasC .grandes1{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estufasC .grandes2{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estufasC .grandes3{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estufasR img{
+        min-width: 0%;
+        max-width: max-content;
+        margin: 10px;
+    }
+
+    #estufasR .gigantes{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estufasR .gigantes1{
+        display: flex;
+        justify-content: center;
+    }
+
+    #otros .todo{
+        display: flex;
+        justify-content: center;
+    }
+
+    #otros img{
+        min-width: 0%;
+        max-width: max-content;
+        margin: 10px;
+    }
+
+    #contacto h2{
+        margin-left: 25px;
+    }
+
+    #contacto .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #contacto ul{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+}
